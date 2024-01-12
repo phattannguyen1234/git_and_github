@@ -3,3 +3,4 @@ line 2, after first commit
 line 3, I have created a new branch, second branch
 line 4, modify text.txt file at github, after push the master branch to github
 line 5, the first time, using pull
+line 6, push local changes to github, using git commit -a -m ...

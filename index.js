@@ -22,5 +22,23 @@ async function readandwrite(){
         console.error(err);
     }
 }
-readandwrite();
 // 5.2 **
+
+// 5.3
+async function readandwrite2(){
+    try{
+        console.log("**Reading append.txt**");
+        const index3 = fs.readFileSync('txt/append.txt', 'utf-8');
+        console.log("**Writing append.txt to start.txt**");
+        fs.appendFileSync('txt/start.txt', '\n' + index3, 'utf-8');
+    } catch(err){
+        console.log(err);
+    }
+}
+// 5.3 **
+
+async function main(){
+    await readandwrite();
+    await readandwrite2();
+}
+main();

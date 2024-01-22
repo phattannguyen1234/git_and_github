@@ -37,16 +37,18 @@ async function readandwrite2(){
 }
 // 5.3 **
 
-// 5.4
+// 5.4 - 5.5
 async function rename(){
     try{
         console.log('Renaming start.txt to final2.txt');
         fs.renameSync('txt/start.txt', 'txt/final2.txt');
+        const index4 = await fs.readFileSync('txt/final2.txt', 'utf-8');
+    console.log("**Below is the content of final2.txt**", '\n', index4);
     }catch(err){
         console.log(err);
     }
 }
-// 5.4 **
+// 5.4 - 5.5 **
 
 async function main(){
     await readandwrite();

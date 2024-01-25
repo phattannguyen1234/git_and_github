@@ -4,3 +4,4 @@ Line 3 > What is your name? "delete more.txt"
 Line 4 > I'm there, in that house. "file.txt without content. file 2.txt with line 1"
 Line 5 > Enjoying
 Line 6 > Moon
+Line 7 > Temp
